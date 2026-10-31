@@ -1,4 +1,3 @@
-/* গ্লোবাল স্টাইল */
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +10,6 @@ body {
     color: #333;
 }
 
-/* হেডার */
 header {
     background-color: #ff4757;
     color: white;
@@ -22,23 +20,24 @@ header {
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
-.logo h1 {
-    font-size: 28px;
-}
+.logo h1 { font-size: 28px; }
+.logo span { color: #ffa502; }
 
-.logo span {
-    color: #ffa502;
-}
-
-.cart-status {
+.head-contact-btn {
     background-color: white;
     color: #ff4757;
     padding: 8px 15px;
     border-radius: 20px;
     font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
 }
 
-/* ক্যাটাগরি */
+.head-contact-btn:hover {
+    background-color: #ffa502;
+    color: white;
+}
+
 .category-section {
     text-align: center;
     padding: 25px 5% 10px;
@@ -71,14 +70,13 @@ header {
     color: white;
 }
 
-/* প্রোডাক্ট গ্রিড */
 .products-section {
     padding: 20px 5% 50px;
 }
 
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 25px;
 }
 
@@ -106,6 +104,8 @@ header {
 .product-title {
     font-size: 16px;
     margin-bottom: 8px;
+    height: 40px;
+    overflow: hidden;
 }
 
 .product-price {
@@ -115,23 +115,44 @@ header {
     margin-bottom: 12px;
 }
 
-.add-btn {
+/* বাটনের ডিজাইন */
+.product-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.order-btn {
     background-color: #2ed573;
     color: white;
     border: none;
-    width: 100%;
-    padding: 10px;
+    flex: 1;
+    padding: 10px 5px;
     border-radius: 6px;
     font-weight: bold;
     cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
     transition: 0.2s;
 }
 
-.add-btn:hover {
-    background-color: #26af5f;
+.order-btn:hover { background-color: #26af5f; }
+
+.contact-btn {
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    flex: 1;
+    padding: 10px 5px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.2s;
 }
 
-/* ফুটার */
+.contact-btn:hover { background-color: #3742fa; }
+
 footer {
     background-color: #2f3542;
     color: white;
