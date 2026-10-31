@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toy Zone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- হেডার সেকশন -->
+    <header>
+        <div class="logo">
+            <h1>Toy<span>Zone</span></h1>
+        </div>
+        <div class="cart-status">
+            🛒 কার্ট (<span id="cart-count">0</span>)
+        </div>
+    </header>
+
+    <!-- ক্যাটাগরি ফিল্টার সেকশন -->
+    <section class="category-section">
+        <h2>আমাদের ক্যাটাগরি</h2>
+        <div class="category-buttons">
+            <button class="cat-btn active" onclick="filterProducts('all')">সব খেলনা</button>
+            <button class="cat-btn" onclick="filterProducts('soft')">সফট টয়</button>
+            <button class="cat-btn" onclick="filterProducts('rc')">রিমোট কন্ট্রোল</button>
+            <button class="cat-btn" onclick="filterProducts('puzzle')">পাজল ও ব্লকস</button>
+            <button class="cat-btn" onclick="filterProducts('learning')">এডুকেশনাল</button>
+        </div>
+    </section>
+
+    <!-- প্রোডাক্ট গ্রিড সেকশন -->
+    <main class="products-section">
+        <h2>পণ্যসমূহ</h2>
+        <div class="product-grid" id="product-grid">
+            <!-- JavaScript এর মাধ্যমে প্রোডাক্ট এখানে লোড হবে -->
+        </div>
+    </main>
+
+    <!-- ফুটার সেকশন -->
+    <footer>
+        <p>&copy; 2026 Toy Zone. সর্বস্বত্ব সংরক্ষিত।</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
